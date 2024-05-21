@@ -1,0 +1,43 @@
+- Instalar Node.js y npm: para ver la version node --vesion & npm --version || npx --version
+
+- Descargar Expo Dev Environment: npm install --global expo-cli
+
+- Debemos configurar nuestra cuenta de Expo.
+  - Debemos crear una cuenta de expo y descargar la aplicacion Expo go desde appstore (yo porque tengo iOS).
+  - Para registrarnos: npx expo register.
+  - Ahora debemos loguearnos desde la terminal: npx expo login.
+  - Con el comando - npx expo whoami podemos ver si quedamos logueados correctamente.
+
+- Al ya crear la carpeta para el proyecto, se debe inicialiar el proyecto con: npx create-expo-app my-app -t.
+- Nos paramos sobre el proyecto creado con Expo y cargamos el proyecto con las dependencias necesarias: npx expo start
+
+- Si dice en Expo Go "No projects are currently open", volvemos a correr la aplicacion en la terminal - npx expo start.
+- Ahora en Expo go podemos ver en Recently in Development que esta corriendo el proyecto. En la terminal podemos ver como se ejecutan los archivos necesarios.
+
+- Link para ver la documentacion de Expo: https://docs.expo.dev/
+
+- npx expo install formik styled-components expo-constants : Formik es una biblioteca de gestión de formularios para aplicaciones web utilizando React. 
+	-npx expo install formik styled-components expo-constants -- --legacy-peer-deps (por si no funciona)
+
+- npm install @expo/vector-icons: Es una libreria de iconos para usar en expo para react native.
+- npx expo install @react-native-community/datetimepicker: me permite seleccionar la fecha al usar un calendario.
+
+- npm install react-native-element-dropdown --save
+
+- npm install @react-navigation/native: para utilizar la navegabilidad entre los componentes.
+- npx expo install react-native-screens react-native-safe-area-context
+- npm install @react-navigation/native-stack
+
+- npm install axios: para conectar metodos con el backend.
+- import Constants from 'expo-constants';
+
+- npm install expo-location
+- npm install react-native-maps
+- npm install react-native-maps-directions
+- npm install react-native-dotenv
+- npm install @env --save-dev
+- npm install react-native-snap-carousel@1.3.1
+- npm install react-native-reanimated
+- npm install -g eas-cli
+- eas build:configure  
+- eas build -p android --profile preview  
